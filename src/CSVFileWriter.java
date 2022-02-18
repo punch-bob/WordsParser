@@ -26,7 +26,6 @@ public class CSVFileWriter
             
             for(Pair<String, Integer> word: sortDictionary)
             {
-                
                 out.write(makeCSVString(word, totalWords));
             }
         }

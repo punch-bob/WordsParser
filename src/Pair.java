@@ -2,7 +2,7 @@ package src;
 
 public class Pair <K, V>
 {
-    private K first;      
+    private final K first;      
     private V second;
 
     Pair(K first, V second)

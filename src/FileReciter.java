@@ -55,5 +55,4 @@ public class FileReciter
         }
         return listOfWords;
     }
-    
 }
