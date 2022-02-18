@@ -6,8 +6,8 @@ public class Main
 {
    public static void main(String[] args) 
    {
-        List<String> text = ReadFile.readFile("in.txt");
-        Set<Pair<String, Integer>> dictionary = WordsDictionary.sortDictionary(text);
-        WriteFile.writeFile("out.csv", dictionary, text.size());
+        List<String> text = FileReciter.readFile("in.txt");
+        Set<Pair<String, Integer>> dictionary = DictionarySorter.sortDictionary(text);
+        CSVFileWriter.writeFile("out.csv", dictionary, text.size());
    }
 }

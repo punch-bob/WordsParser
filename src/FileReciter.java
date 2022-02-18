@@ -3,7 +3,7 @@ package src;
 import java.io.*;
 import java.util.*;
 
-public class ReadFile
+public class FileReciter
 {
     public static List<String> readFile(String filename)
     {

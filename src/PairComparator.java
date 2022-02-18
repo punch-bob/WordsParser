@@ -2,7 +2,7 @@ package src;
 
 import java.util.*;
 
-class FrequencyComparator implements Comparator<Pair<String, Integer>>
+class PairComparator implements Comparator<Pair<String, Integer>>
 {
     @Override
     public int compare(Pair<String, Integer> p1, Pair<String, Integer> p2) 
@@ -18,5 +18,4 @@ class FrequencyComparator implements Comparator<Pair<String, Integer>>
             return cmp;
         }
     }
-    
 }
