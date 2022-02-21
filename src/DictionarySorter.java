@@ -5,9 +5,9 @@ import java.util.*;
 
 public class DictionarySorter 
 {    
-    public static TreeSet<Pair<String, Integer>> sortDictionary(Set<Pair<String, Integer>> dictionary)
+    public static Set<Pair<String, Integer>> sortDictionaryByFrequency(Set<Pair<String, Integer>> dictionary)
     {   
-        TreeSet<Pair<String, Integer>> sortedDictionary = new TreeSet<>(new PairComparator());
+        TreeSet<Pair<String, Integer>> sortedDictionary = new TreeSet<>(new ResortComparator());
         sortedDictionary.addAll(dictionary);
         return sortedDictionary;
     }

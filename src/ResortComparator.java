@@ -2,7 +2,7 @@ package src;
 
 import java.util.*;
 
-class PairComparator implements Comparator<Pair<String, Integer>>
+class ResortComparator implements Comparator<Pair<String, Integer>>
 {
     @Override
     public int compare(Pair<String, Integer> p1, Pair<String, Integer> p2) 
