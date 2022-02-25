@@ -2,10 +2,10 @@ package src;
 
 import java.util.*;
 
-public class PairKeyComparator implements Comparator<Pair<String, Integer>>
+public class PairKeyComparator<TKey extends Comparable<TKey>, TValue> implements Comparator<Pair<TKey, TValue>>
 {
     @Override
-    public int compare(Pair<String, Integer> p1, Pair<String, Integer> p2) 
+    public int compare(Pair<TKey, TValue> p1, Pair<TKey, TValue> p2) 
     {
         return p2.getKey().compareTo(p1.getKey());
     }

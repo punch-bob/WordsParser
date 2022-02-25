@@ -6,7 +6,7 @@ public class WordsCounter
 {
     public static Set<Pair<String, Integer>> countWordsFrequency(List<String> listOfWords)
     {
-        TreeSet<Pair<String, Integer>> dictionary = new TreeSet<>(new PairKeyComparator());
+        TreeSet<Pair<String, Integer>> dictionary = new TreeSet<>(new PairKeyComparator<String, Integer>());
         for (String word: listOfWords)
         {
             Pair<String, Integer> newCandidate = new Pair<String, Integer>(word, 1);

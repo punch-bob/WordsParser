@@ -7,7 +7,7 @@ public class Main
    {
       List<String> text = FileReciter.readFile("in.txt");
       Set<Pair<String, Integer>> dictionary = WordsCounter.countWordsFrequency(text);
-      TreeSet<Pair<String, Integer>> sortedDictionary = (TreeSet<Pair<String, Integer>>)DictionarySorter.sortDictionaryByFrequency(dictionary);
+      SortedSet<Pair<String, Integer>> sortedDictionary = DictionarySorter.sortDictionaryByFrequency(dictionary);
       CSVFileWriter.writeFile("out.csv", sortedDictionary, text.size());
    }
 }
