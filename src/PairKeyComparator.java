@@ -1,5 +1,3 @@
-package src;
-
 import java.util.*;
 
 public class PairKeyComparator<TKey extends Comparable<TKey>, TValue> implements Comparator<Pair<TKey, TValue>>

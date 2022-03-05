@@ -1,5 +1,3 @@
-package src;
-
 import java.util.*;
 
 class ResortComparator implements Comparator<Pair<String, Integer>>
